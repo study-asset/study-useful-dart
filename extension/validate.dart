@@ -13,7 +13,7 @@ class AuthValidator {
 
   String? password(String value) {
     if (value.isEmpty) return "비밀번호를 입력해주세요.";
-    else if (!value.isValidPassword) return "비밀번호를 올바르게 입력해 주세요.";
+    else if (!value.isValidPassword) return "비밀번호는 8 ~ 15자 이내이며 숫자, 특수문자 1개 이상 포함해야합니다.";
     else return null;
   }
 }
