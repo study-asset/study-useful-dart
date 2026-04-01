@@ -19,5 +19,5 @@ void main() {
   print(filteredFruits.chunk(2)); // [[사과, 바나나], [망고, 수박], [딸기, 포도]]
 
   List<String> findFruits = fruits.findItems("사과");
-  print(findFruits);
+  print(findFruits); // [사과, 사과]
 }
